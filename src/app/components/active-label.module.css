@@ -1,0 +1,18 @@
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+
+  border-radius: 28px;
+  padding: 4px 14px;
+  width: 83px;
+  height: 28px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #15803d;
+  background: #dcfce7;
+}
