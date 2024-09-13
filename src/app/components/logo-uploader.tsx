@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import img from '../../../public/icons/upload-svg.svg';
 
 export interface LogoUploaderProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
@@ -16,7 +17,7 @@ export default function LogoUploader({ label, placeholder, id, ...rest }: LogoUp
         htmlFor={id}
         className="flex flex-col items-center justify-center w-40 h-40 bg-white border border-slate-900 border-dashed rounded-full cursor-pointer"
       >
-        <Image className="mb-1" width={48} height={48} src="/icons/upload.svg" alt="upload" />
+        <Image className="mb-1" width={48} height={48} src={img} alt="upload" />
         {placeholder && <p className="text-base text-gray-500">{placeholder}</p>}
         <input {...rest} id={id} type="file" accept="image/*" className="hidden" />
       </label>

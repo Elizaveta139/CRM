@@ -2,7 +2,12 @@
 
 import React, { useState } from 'react';
 import Button from './button';
-import CompanyFormModal from './company-form-modal';
+import dynamic from 'next/dynamic';
+// import CompanyFormModal from './company-form-modal';
+
+const CompanyFormModal = dynamic(() => import('./company-form-modal'), {
+  ssr: false,
+});
 
 export default function AddCompanyButton() {
   const [show, setShow] = useState(false);
