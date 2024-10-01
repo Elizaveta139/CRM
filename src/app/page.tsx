@@ -10,10 +10,10 @@ export default function Home() {
       <main>
         <h1 className="text-xl">Home page</h1>
         <AddCompanyButton />
-        {/* <ServerComponent />
+        <ServerComponent />
         <ClientComponent>
           <ServerComponentCopy />
-        </ClientComponent> */}
+        </ClientComponent>
       </main>
     </div>
   );
