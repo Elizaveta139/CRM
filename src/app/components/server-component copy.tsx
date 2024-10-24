@@ -6,8 +6,8 @@ export interface ServerComponentCopyProps {
 }
 
 export default function ServerComponentCopy({ children }: ServerComponentCopyProps) {
-  console.log('Server Component Copy');
-  console.log(headers());
+  // console.log('Server Component Copy');
+  // console.log(headers());
 
   return (
     <div>
