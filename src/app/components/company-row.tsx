@@ -51,9 +51,13 @@ export default function CompanyRow({
           />
           <span
             className={clsx('text - sm font-medium', promotion ? 'text-gray-700' : 'text-red-700')}
-          ></span>
+          >
+            {promotion ? 'Yes' : 'No'}
+          </span>
         </div>
       </td>
+      <td>{country}</td>
+      <td className="rounded-r">{new Date(joinedData).toLocaleDateString('uk-UA')}</td>
     </tr>
   );
 }
