@@ -10,11 +10,11 @@ export interface inputFieldProps extends React.InputHTMLAttributes<HTMLInputElem
 export default function InputField({ label, id, ...rest }: inputFieldProps) {
   return (
     <div className="flex flex-col">
-      {/* {label && (
+      {label && (
         <label htmlFor={id} className="mb-2 text-base color-gray-900">
           {label}
         </label>
-      )} */}
+      )}
       <Field {...rest} id={id} className="p-3 h-11 text-sm roonded border border-gray-300 shadom" />
     </div>
   );
