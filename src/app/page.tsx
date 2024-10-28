@@ -1,9 +1,9 @@
 import AddCompanyButton from './components/add-company-button';
 import ClientComponent from './components/client-component';
-import CompanyRow from './components/company-row';
+// import CompanyRow from './components/company-row';
 import ServerComponent from './components/server-component';
 import ServerComponentCopy from './components/server-component copy';
-import StatusLabel, { Status } from './components/status-label';
+// import StatusLabel, { Status } from './components/status-label';
 
 export default function Home() {
   return (
