@@ -11,7 +11,7 @@ export type CompanyRowProps = {
   status: Status;
   promotion: boolean;
   country: string;
-  joinedData: string;
+  joinedDate: string;
 };
 
 const labelByStatus = {
@@ -28,7 +28,7 @@ export default function CompanyRow({
   status,
   promotion,
   country,
-  joinedData,
+  joinedDate,
 }: CompanyRowProps) {
   return (
     <tr className="h-14 text-center text-gray-900 bg-white">
@@ -57,7 +57,7 @@ export default function CompanyRow({
         </div>
       </td>
       <td>{country}</td>
-      <td className="rounded-r">{new Date(joinedData).toLocaleDateString('uk-UA')}</td>
+      <td className="rounded-r">{new Date(joinedDate).toLocaleDateString('uk-UA')}</td>
     </tr>
   );
 }
