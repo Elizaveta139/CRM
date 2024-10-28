@@ -11,15 +11,6 @@ export default function Home() {
       <main>
         <h1 className="text-xl">Home page</h1>
         <AddCompanyButton />
-        <CompanyRow
-          id={1}
-          category="Products"
-          company="Costco"
-          status={Status.Pending}
-          promotion={true}
-          country="USA"
-          joinedDate="02.19.2023"
-        />
         <ServerComponent />
         <ClientComponent>
           <ServerComponentCopy />

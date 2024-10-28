@@ -32,7 +32,7 @@ export default function CompanyRow({
 }: CompanyRowProps) {
   return (
     <tr className="h-14 text-center text-gray-900 bg-white">
-      <td className="text-xs font-medium text-blue-700 rounded-1 border-1-4 border-blue-700">
+      <td className="text-xs font-medium text-blue-700 rounded-l border-l-4 border-blue-700">
         {category}
       </td>
       <td>
@@ -50,7 +50,7 @@ export default function CompanyRow({
             alt="promotion icon"
           />
           <span
-            className={clsx('text - sm font-medium', promotion ? 'text-gray-700' : 'text-red-700')}
+            className={clsx('text-sm font-medium', promotion ? 'text-green-700' : 'text-red-700')}
           >
             {promotion ? 'Yes' : 'No'}
           </span>

@@ -4,7 +4,7 @@ export interface CompanyTableProps {
   children?: React.ReactNode;
 }
 
-const headers = ['Category', 'Company', 'Status', 'Promotion', 'country', 'Joined date'];
+const headers = ['Category', 'Company', 'Status', 'Promotion', 'Country', 'Joined data'];
 
 export default function CompanyTable({ children }: CompanyTableProps) {
   return (
