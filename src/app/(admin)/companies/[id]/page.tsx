@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '../../components/header';
+import Header from '@/app/components/header';
+// import Header from '../../components/header';
 
 // export interface IdCompaniesPageProps {
 //   params: { id: string[] };
