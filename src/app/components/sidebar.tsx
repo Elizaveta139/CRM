@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import SidebarItem from '@/app/components/sidebar-item';
-// import SidebarItem from '../components/sidebar-item';
+// import SidebarItem from '@/app/components/sidebar-item';
+import SidebarItem from '../components/sidebar-item';
 
 export interface SidebarProps {}
 
@@ -13,24 +13,19 @@ export default function SidebarProps({}: SidebarProps) {
           className="py-8 mb-11 mx-auto"
           width={122}
           height={25}
-          src="../../../public/icons/logo.svg"
+          src="/icons/logo.svg"
           alt="logo"
         />
         <ul className="space-y-7">
           <SidebarItem pathname="/dashboard" src="/icons/squares.svg" alt="dashboard icon">
             Dashboard
           </SidebarItem>
-          <SidebarItem pathname="/companies" src="icons/briefcase.svg" alt="companies icon">
+          <SidebarItem pathname="/companies" src="/icons/briefcase.svg" alt="companies icon">
             Companies
           </SidebarItem>
         </ul>
         <button className="flex items-center gap-2 p-6 mt-auto mx-auto">
-          <Image
-            width={18}
-            height={18}
-            src="../../../public/icons/arrow-left-on-rectangle.svg"
-            alt="logo"
-          />
+          <Image width={18} height={18} src="/icons/arrow-left-on-rectangle.svg" alt="logo" />
           <span className="font-medium text-white">Exit</span>
         </button>
       </div>
