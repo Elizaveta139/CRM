@@ -8,6 +8,8 @@ export interface LayoutProps {
 }
 
 export default function Layout({ children, header, toolbar, modal }: LayoutProps) {
+  console.log('Layout');
+
   return (
     <>
       {modal}
