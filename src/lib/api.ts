@@ -24,7 +24,7 @@ export const getSummaryPromotions = () => {
   const items = [];
   for (let i = 0; i < 7; i++) {
     items.push({
-      companyId: i + 1,
+      promotionId: i + 1,
       promotionName: 'Lorem ipsum dolor',
       companyTitle: 'Costco Wholesale',
       discount: 40,
