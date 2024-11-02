@@ -7,6 +7,7 @@ export interface PageProps {}
 
 export default async function Page({}: PageProps) {
   const data = await getSummaryCategories();
+
   return (
     <DashboardCard label="Categories of companies">
       <div className="grid grid-cols-12 gap-3 pb-5 px-5">
