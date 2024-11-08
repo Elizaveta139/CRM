@@ -14,10 +14,10 @@ export default function Home() {
         <AddCompanyButton />
         <MagicButton />
 
-        <ServerComponent />
+        {/* <ServerComponent />
         <ClientComponent>
           <ServerComponentCopy />
-        </ClientComponent>
+        </ClientComponent> */}
       </main>
     </div>
   );
