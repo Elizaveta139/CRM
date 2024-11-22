@@ -44,10 +44,10 @@ export default function SidebarProps({}: SidebarProps) {
             Companies
           </SidebarItem>
         </ul>
-        <button className="flex items-center gap-2 p-6 mt-auto mx-auto" onClick={handleExitClick}>
+        {/* <button className="flex items-center gap-2 p-6 mt-auto mx-auto" onClick={handleExitClick}>
           <Image width={18} height={18} src="/icons/arrow-left-on-rectangle.svg" alt="logo" />
           <span className="font-medium text-white">Exit</span>
-        </button>
+        </button> */}
       </div>
     </aside>
   );
