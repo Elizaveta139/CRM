@@ -7,9 +7,9 @@ import DashboardCard from '@/app/components/dashboard-card';
 export interface PageProps {}
 
 export default async function Page({}: PageProps) {
-  // const categories = await getCategories();
-  // const companies = await getCompanies();
-  // const counts = getCountById(companies, 'categoryId');
+  const categories = await getCategories();
+  const companies = await getCompanies();
+  const counts = getCountById(companies, 'categoryId');
 
   return (
     <DashboardCard label="Categories of companies">
